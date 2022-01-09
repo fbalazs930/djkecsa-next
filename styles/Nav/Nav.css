@@ -4,20 +4,46 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  min-height: 10vh;
+  -webkit-box-shadow: dimgray 0 3px 10px;
+          box-shadow: dimgray 0 3px 10px;
+  font-size: 1.2rem;
+  padding: 0 10rem;
+}
+
+.nav .kecsa a {
+  color: #ff1818;
+  font-size: 1.4rem;
+}
+
+.nav .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 1rem;
-  min-height: 8vh;
-  -webkit-box-shadow: #333333 0 2px 7px;
-          box-shadow: #333333 0 2px 7px;
+  gap: 1.4rem;
+}
+
+.nav .bid {
+  border-radius: 5rem;
+  background: #ff0000;
+  text-align: center;
+  padding: 0.4rem 1.4rem;
 }
 
 .nav a {
   text-decoration: none;
-  color: #000;
 }
 /*# sourceMappingURL=Nav.css.map */

@@ -15,4 +15,8 @@
           flex-direction: column;
   gap: 2rem;
 }
+
+.home h2 span {
+  color: #FF0000;
+}
 /*# sourceMappingURL=Home.css.map */

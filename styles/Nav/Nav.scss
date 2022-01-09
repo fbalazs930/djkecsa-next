@@ -1,13 +1,32 @@
-.nav{
+.nav {
     position: sticky;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap:1rem;
-    min-height: 8vh;
-    box-shadow: hsl(0, 0%, 20%) 0 2px 7px;
-    a{
+    gap: 1rem;
+    min-height: 10vh;
+    box-shadow: hsl(0, 0%, 41%) 0 3px 10px;
+    font-size: 1.2rem;
+    padding: 0 10rem;
+    .kecsa {
+        a {
+            color: #ff1818;
+            font-size: 1.4rem;
+        }
+    }
+    .links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.4rem;
+    }
+    .bid {
+        border-radius: 5rem;
+        background: #ff0000;
+        text-align: center;
+        padding: 0.4rem 1.4rem;
+    }
+    a {
         text-decoration: none;
-        color:#000;
     }
 }

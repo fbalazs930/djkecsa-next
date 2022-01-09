@@ -1,0 +1,21 @@
+.equipment {
+    padding: 2rem 0;
+    h1 {
+        text-align: center;
+    }
+    .items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 3rem;
+        padding:2rem 0 0 0;
+        .item {
+            .img {
+                width: clamp(10rem, 25vw, 35rem);
+                padding-bottom: 62.5%;
+                position: relative;
+            }
+        }
+    }
+}

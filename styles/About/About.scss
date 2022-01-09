@@ -9,4 +9,15 @@
         text-align: center;
         margin:1rem 0;
     }
+    .images{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:1rem;
+        .img{
+           width:clamp(10rem, 30vw, 40rem);
+            padding-bottom: 30%;
+            position: relative;
+        }
+    }
 }

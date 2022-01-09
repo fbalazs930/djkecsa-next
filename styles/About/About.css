@@ -20,4 +20,23 @@
   text-align: center;
   margin: 1rem 0;
 }
+
+.about .images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+.about .images .img {
+  width: clamp(10rem, 30vw, 40rem);
+  padding-bottom: 30%;
+  position: relative;
+}
 /*# sourceMappingURL=About.css.map */

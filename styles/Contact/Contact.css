@@ -26,6 +26,10 @@
   transition: color 0.3s;
 }
 
+.contact a {
+  text-decoration: none;
+}
+
 .contact .icons {
   padding: 2rem;
   display: -webkit-box;

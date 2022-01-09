@@ -2,8 +2,17 @@ import Head from 'next/head'
 import '../styles/Main.css'
 import Link from "next/link";
 import Image from "next/image"
+import { useState } from 'react';
 
 function MyApp({ Component, pageProps }) {
+  const [click, setClick] = useState(false);
+  const handleClick = () => setClick(!click);
+  const closeMenu = () => { setClick(false) };
+  window.addEventListener('resize', () => {
+    setClick(false);
+    if (window.innerWidth < 768) {
+    }
+  });
   return <div>
     <Head>
       <title>DJ Kecsa</title>
@@ -11,18 +20,22 @@ function MyApp({ Component, pageProps }) {
       <link rel="icon" href="/favicon.ico" />
       <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossOrigin="anonymous" />
     </Head>
-    <nav className="nav">
+    <nav className='nav'>
       <Link href="/" passHref>
         <div className="kecsa">
           <Image alt="logo" width="130px" height="30px" src="https://i.postimg.cc/W3p6qCkN/logo.png" />
         </div>
       </Link>
 
-      <div className="links">
-        <Link href="/">Kezdőlap</Link>
-        <Link href="/bemutatkozo">Bemutatkozó</Link>
-        <Link href="/felszereles">Felszerelés</Link>
-        <Link href="/kapcsolat">Kapcsolat</Link>
+      <div className={click ? 'links active' : 'links'}>
+        <Link onClick={closeMenu} href="/">Kezdőlap</Link>
+        <Link onClick={closeMenu} href="/bemutatkozo">Bemutatkozó</Link>
+        <Link onClick={closeMenu} href="/felszereles">Felszerelés</Link>
+        <Link onClick={closeMenu} href="/kapcsolat">Kapcsolat</Link>
+      </div>
+
+      <div className="menu-icon" onClick={handleClick}>
+        <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
       </div>
 
       <div className="bid">

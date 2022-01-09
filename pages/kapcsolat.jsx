@@ -20,10 +20,12 @@ export default function Contact() {
                 </Link>
 
                 <Link href="https://www.facebook.com/djkecsa/" passHref>
-                    <div className="icon">
-                        <i className="fab fa-facebook"></i>
-                        <p>@djkecsa</p>
-                    </div>
+                    <a target="_blank">
+                        <div className="icon">
+                            <i className="fab fa-facebook"></i>
+                            <p>@djkecsa</p>
+                        </div>
+                    </a>
                 </Link>
             </div>
             <p className="bottom">Ezt a tevékenységet hivatalosan hajtom végre, ezáltal számlaképes vagyok és rendelkezem éves MAHASZ engedéllyel!</p>

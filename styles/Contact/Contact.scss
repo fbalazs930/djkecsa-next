@@ -1,3 +1,39 @@
-.contact{
-    
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 70vh;
+    h1 {
+        padding: 2rem 0;
+    }
+    font-size: 1.2rem;
+    i {
+        font-size: 2rem;
+        transition: color 0.3s;
+    }
+    .icons {
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        cursor: pointer;
+        .icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.75rem;
+
+            &:hover {
+                i {
+                    color: rgb(246, 54, 54);
+                    transition: color 0.3s;
+                }
+            }
+        }
+    }
+    .bottom {
+        margin: 3rem 0 0 0;
+    }
 }

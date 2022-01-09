@@ -1,4 +1,4 @@
-.nav{
-    position: fixed;
-    background-color: red;
-}
+@import "./Global/Global.scss";
+@import "./Nav/Nav.scss";
+@import "./About/About.scss";
+@import "./Home/Home.scss";

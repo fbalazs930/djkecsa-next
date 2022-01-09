@@ -5,7 +5,7 @@ export default function About() {
     const { pid } = router.query
     console.log(pid);
     return (
-        <div>
+        <div className="about">
             <h1>Üdvözöllek!</h1>
             <h3>Kecskeméti Márk vagyok, de lehet úgy ismersz hogy Kecsa.</h3>
             <p>

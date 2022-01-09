@@ -1,0 +1,23 @@
+.nav {
+  position: -webkit-sticky;
+  position: sticky;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  min-height: 8vh;
+  -webkit-box-shadow: #333333 0 2px 7px;
+          box-shadow: #333333 0 2px 7px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #000;
+}
+/*# sourceMappingURL=Nav.css.map */

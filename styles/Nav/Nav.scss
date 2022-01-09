@@ -1,17 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
 .nav {
     position: sticky;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
     align-items: center;
-    gap: 1rem;
     min-height: 10vh;
-    box-shadow: hsl(0, 0%, 41%) 0 3px 10px;
-    font-size: 1.2rem;
-    padding: 0 10rem;
+    box-shadow: hsla(0, 0%, 41%, 0.253) 0 1px 3px;
+    font-size: clamp(0.4rem, 10vw, 1.2rem);
+    padding: 0 5rem;
     .kecsa {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         a {
             color: #ff1818;
             font-size: 1.4rem;
+            font-family: "Alfa Slab One", cursive;
         }
     }
     .links {
@@ -19,12 +23,52 @@
         justify-content: center;
         align-items: center;
         gap: 1.4rem;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            display: inline-block;
+            height: 1em;
+            width: 100%;
+            border-bottom: 1px solid;
+            margin-top: 10px;
+            opacity: 0;
+            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+            transition: opacity 0.35s, transform 0.35s;
+            -webkit-transform: scale(0, 1);
+            transform: scale(0, 1);
+        }
+        a{
+            position: relative;
+        }
+        a:hover::after {
+            opacity: 1;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
     }
     .bid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         border-radius: 5rem;
         background: #ff0000;
         text-align: center;
-        padding: 0.4rem 1.4rem;
+        padding: 0.4rem 1.1rem;
+        transition: color 0.3s;
+        transition: background 0.3s;
+        word-break: keep-all;
+        &:hover {
+            a {
+                color: #ff0000;
+                transition: color 0.3s;
+            }
+            background: #d9d9d9;
+            transition: background 0.3s;
+        }
+        white-space: nowrap;
     }
     a {
         text-decoration: none;

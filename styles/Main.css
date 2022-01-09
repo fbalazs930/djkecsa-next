@@ -1,10 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
 * {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Nunito', sans-serif;
   color: #D9D9D9;
 }
 
@@ -15,26 +16,36 @@ body {
 .nav {
   position: -webkit-sticky;
   position: sticky;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 15% 70% 15%;
+      grid-template-columns: 15% 70% 15%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 1rem;
   min-height: 10vh;
-  -webkit-box-shadow: dimgray 0 3px 10px;
-          box-shadow: dimgray 0 3px 10px;
-  font-size: 1.2rem;
-  padding: 0 10rem;
+  -webkit-box-shadow: rgba(105, 105, 105, 0.253) 0 1px 3px;
+          box-shadow: rgba(105, 105, 105, 0.253) 0 1px 3px;
+  font-size: clamp(0.4rem, 10vw, 1.2rem);
+  padding: 0 5rem;
+}
+
+.nav .kecsa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .nav .kecsa a {
   color: #ff1818;
   font-size: 1.4rem;
+  font-family: "Alfa Slab One", cursive;
 }
 
 .nav .links {
@@ -48,13 +59,70 @@ body {
       -ms-flex-align: center;
           align-items: center;
   gap: 1.4rem;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+.nav .links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 1px solid;
+  margin-top: 10px;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
+  -webkit-transform: scale(0, 1);
+  transform: scale(0, 1);
+}
+
+.nav .links a {
+  position: relative;
+}
+
+.nav .links a:hover::after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
 }
 
 .nav .bid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 5rem;
   background: #ff0000;
   text-align: center;
-  padding: 0.4rem 1.4rem;
+  padding: 0.4rem 1.1rem;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+  word-break: keep-all;
+  white-space: nowrap;
+}
+
+.nav .bid:hover {
+  background: #d9d9d9;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+}
+
+.nav .bid:hover a {
+  color: #ff0000;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
 }
 
 .nav a {
@@ -168,6 +236,48 @@ body {
   padding-bottom: 20vh;
 }
 
+::-webkit-calendar-picker-indicator {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+  color: #dadada;
+}
+
+:-ms-input-placeholder {
+  color: #dadada;
+}
+
+::-ms-input-placeholder {
+  color: #dadada;
+}
+
+::placeholder {
+  color: #dadada;
+}
+
+.bidding {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.bidding h1 {
+  padding: 2rem;
+}
+
 .bidding form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -186,7 +296,6 @@ body {
   min-height: 50vh;
   gap: 1rem;
   padding: 1rem 0;
-  background: #2ac45d;
 }
 
 @media only screen and (max-width: 1050px) {
@@ -202,15 +311,16 @@ body {
   border-radius: 5px;
   outline: none;
   border: none;
-  -webkit-box-shadow: 0 0 0 1px var(--between);
-          box-shadow: 0 0 0 1px var(--between);
+  -webkit-box-shadow: 0 0 0 .5px red;
+          box-shadow: 0 0 0 .5px red;
   padding: 0.5rem;
+  background: rgba(0, 0, 0, 0.267);
 }
 
 .bidding form input:focus,
 .bidding form textarea:focus {
-  -webkit-box-shadow: 0 0 0 2px var(--between);
-          box-shadow: 0 0 0 2px var(--between);
+  -webkit-box-shadow: 0 0 0 2px red;
+          box-shadow: 0 0 0 2px red;
 }
 
 .bidding form textarea {
@@ -222,9 +332,9 @@ body {
 .bidding form button {
   cursor: pointer;
   font-size: clamp(1rem, 4vw, 1.3rem);
-  background: var(--between);
+  background: red;
   color: #fff;
-  border: 2px solid var(--between);
+  border: 2px solid red;
   padding: 0.8rem 1.3rem;
   position: relative;
   z-index: 1;
@@ -232,7 +342,7 @@ body {
 }
 
 .bidding form button:hover {
-  color: var(--between);
+  color: red;
 }
 
 .bidding form button:hover::after {
@@ -244,7 +354,7 @@ body {
 
 .bidding form button::after {
   content: "";
-  background: #ecf0f1;
+  background: #d9d9d9;
   position: absolute;
   z-index: -1;
   padding: 1rem 1.5rem;

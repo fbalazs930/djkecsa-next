@@ -1,3 +1,45 @@
+::-webkit-calendar-picker-indicator {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+  color: #dadada;
+}
+
+:-ms-input-placeholder {
+  color: #dadada;
+}
+
+::-ms-input-placeholder {
+  color: #dadada;
+}
+
+::placeholder {
+  color: #dadada;
+}
+
+.bidding {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.bidding h1 {
+  padding: 2rem;
+}
+
 .bidding form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -16,7 +58,6 @@
   min-height: 50vh;
   gap: 1rem;
   padding: 1rem 0;
-  background: #2ac45d;
 }
 
 @media only screen and (max-width: 1050px) {
@@ -32,15 +73,16 @@
   border-radius: 5px;
   outline: none;
   border: none;
-  -webkit-box-shadow: 0 0 0 1px var(--between);
-          box-shadow: 0 0 0 1px var(--between);
+  -webkit-box-shadow: 0 0 0 .5px red;
+          box-shadow: 0 0 0 .5px red;
   padding: 0.5rem;
+  background: rgba(0, 0, 0, 0.267);
 }
 
 .bidding form input:focus,
 .bidding form textarea:focus {
-  -webkit-box-shadow: 0 0 0 2px var(--between);
-          box-shadow: 0 0 0 2px var(--between);
+  -webkit-box-shadow: 0 0 0 2px red;
+          box-shadow: 0 0 0 2px red;
 }
 
 .bidding form textarea {
@@ -52,9 +94,9 @@
 .bidding form button {
   cursor: pointer;
   font-size: clamp(1rem, 4vw, 1.3rem);
-  background: var(--between);
+  background: red;
   color: #fff;
-  border: 2px solid var(--between);
+  border: 2px solid red;
   padding: 0.8rem 1.3rem;
   position: relative;
   z-index: 1;
@@ -62,7 +104,7 @@
 }
 
 .bidding form button:hover {
-  color: var(--between);
+  color: red;
 }
 
 .bidding form button:hover::after {
@@ -74,7 +116,7 @@
 
 .bidding form button::after {
   content: "";
-  background: #ecf0f1;
+  background: #d9d9d9;
   position: absolute;
   z-index: -1;
   padding: 1rem 1.5rem;

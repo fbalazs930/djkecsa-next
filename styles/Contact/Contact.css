@@ -22,6 +22,8 @@
 
 .contact i {
   font-size: 2rem;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
 }
 
 .contact .icons {
@@ -54,6 +56,8 @@
 
 .contact .icons .icon:hover i {
   color: #f63636;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
 }
 
 .contact .bottom {

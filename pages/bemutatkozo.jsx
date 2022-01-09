@@ -4,7 +4,7 @@ export default function About() {
     return (
         <div className="about">
             <h1>Üdvözöllek!</h1>
-            <h3>Kecskeméti Márk vagyok, de lehet úgy ismersz hogy Kecsa.</h3>
+            <h2>Kecskeméti Márk vagyok, de lehet úgy ismersz hogy Kecsa.</h2>
             <p>
                 Az én zenei szeretetem általános iskolába nyúlik vissza 6. osztályba, ahol felkértek, hogy zenéljek a felsős évfolyamnak ekkor ez egy nagy falat volt nekem, de a végén sikeresen teljesítettem. Ezentúl én voltam a zenei felelős az iskolában a studió munkálatokat is én végeztem(iskolai hangosítás, ballagások, különböző ünnepségek).
             </p>
@@ -16,7 +16,7 @@ export default function About() {
             </p>
 
             <h3>
-                A zenei repertoárom elég széles én úgy gondolom megtalálható benne: Retró slágerek, Mulatós, mai fiatalságnak megfelelő stílusok tömérdektelen mennyiségben!
+                A zenei repertoárom elég széles én úgy gondolom. Kb. 8000 zene, amikben található: Retró slágerek, Mulatós, mai fiatalságnak megfelelő stílusok tömérdektelen mennyiségben!
             </h3>
 
             <div className="images">

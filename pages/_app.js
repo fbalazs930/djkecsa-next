@@ -12,9 +12,11 @@ function MyApp({ Component, pageProps }) {
       <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossOrigin="anonymous" />
     </Head>
     <nav className="nav">
-      <div className="kecsa">
-        <Image alt="logo" width="130px" height="30px" src="https://i.postimg.cc/W3p6qCkN/logo.png" />
-      </div>
+      <Link href="/" passHref>
+        <div className="kecsa">
+          <Image alt="logo" width="130px" height="30px" src="https://i.postimg.cc/W3p6qCkN/logo.png" />
+        </div>
+      </Link>
 
       <div className="links">
         <Link href="/">Kezdőlap</Link>

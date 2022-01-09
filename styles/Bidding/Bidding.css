@@ -66,6 +66,10 @@
   }
 }
 
+.bidding form .date {
+  color: #fff;
+}
+
 .bidding form input,
 .bidding form textarea {
   width: 80%;
@@ -116,15 +120,15 @@
 
 .bidding form button::after {
   content: "";
-  background: #d9d9d9;
+  background: #111111;
   position: absolute;
   z-index: -1;
   padding: 1rem 1.5rem;
   display: block;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  left: -30%;
-  right: -30%;
+  left: -35%;
+  right: -35%;
   top: 0;
   bottom: 0;
   -webkit-transform: skewX(-45deg) scale(0, 1);

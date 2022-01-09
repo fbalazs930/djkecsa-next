@@ -6,11 +6,11 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Nunito', sans-serif;
-  color: #D9D9D9;
+  color: #828282;
 }
 
 body {
-  background-color: #1b1b1b;
+  background-color: #111111;
 }
 
 .nav {
@@ -40,6 +40,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 .nav .kecsa a {
@@ -110,11 +111,12 @@ body {
   -webkit-transition: background 0.3s;
   transition: background 0.3s;
   word-break: keep-all;
+  border: 2px solid red;
   white-space: nowrap;
 }
 
 .nav .bid:hover {
-  background: #d9d9d9;
+  background: transparent;
   -webkit-transition: background 0.3s;
   transition: background 0.3s;
 }
@@ -123,6 +125,10 @@ body {
   color: #ff0000;
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
+}
+
+.nav .bid a {
+  color: white;
 }
 
 .nav a {
@@ -150,6 +156,15 @@ body {
 .about h1 {
   text-align: center;
   margin: 1rem 0;
+}
+
+.about h2 {
+  padding: 0 0 1rem 0;
+}
+
+.about p {
+  font-size: 1.12rem;
+  line-height: 25px;
 }
 
 .about .images {
@@ -304,6 +319,10 @@ body {
   }
 }
 
+.bidding form .date {
+  color: #fff;
+}
+
 .bidding form input,
 .bidding form textarea {
   width: 80%;
@@ -354,15 +373,15 @@ body {
 
 .bidding form button::after {
   content: "";
-  background: #d9d9d9;
+  background: #111111;
   position: absolute;
   z-index: -1;
   padding: 1rem 1.5rem;
   display: block;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  left: -30%;
-  right: -30%;
+  left: -35%;
+  right: -35%;
   top: 0;
   bottom: 0;
   -webkit-transform: skewX(-45deg) scale(0, 1);

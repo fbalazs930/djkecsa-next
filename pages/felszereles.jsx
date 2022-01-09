@@ -8,25 +8,25 @@ export default function Equipment() {
                 <div className="item">
                     <div>2db Turbosound Milan M12 aktív hangfal</div>
                     <div className="img">
-                        <Image alt="Turbosound Milan M12" layout="fill" src="https://i.postimg.cc/4NTXQPmk/turbosound-milan-m12.jpg" />
+                        <Image alt="Turbosound Milan M12" layout="fill" src="https://i.postimg.cc/GhPd1WS2/image.png" />
                     </div>
                 </div>
                 <div className="item">
                     <div>2db JBL PRX PRX618S-XLF aktív mélyláda</div>
                     <div className="img">
-                        <Image alt="JBL PRX PRX618S-XLF" layout="fill" src="https://i.postimg.cc/XJMP6HMn/PRX618-S-XLF.jpg" />
+                        <Image alt="JBL PRX PRX618S-XLF" layout="fill" src="https://i.postimg.cc/tCBvPDsk/PRX618-S-XLF-removebg-preview.png" />
                     </div>
                 </div>
                 <div className="item">
                     <div>DBX driverack pa2 rendeszvezérlő processzor</div>
                     <div className="img">
-                        <Image alt="DBX driverack pa2" layout="fill" src="https://i.postimg.cc/qMtZgHkp/driverack-pa2.jpg" />
+                        <Image alt="DBX driverack pa2" layout="fill" src="https://i.postimg.cc/Bndgcz4T/image-removebg.png" />
                     </div>
                 </div>
                 <div className="item">
                     <div>Pioneer DDJ-1000 Dj szoftver vezérlő</div>
                     <div className="img">
-                        <Image alt="Pioneer DDJ-1000" layout="fill" src="https://i.postimg.cc/bY537V1W/DDJ-1000.jpg" />
+                        <Image alt="Pioneer DDJ-1000" layout="fill" src="https://i.postimg.cc/KYSPggDQ/image-removebg-preview.png" />
                     </div>
                 </div>
                 <div className="item">

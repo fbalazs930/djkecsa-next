@@ -12,6 +12,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
         a {
             color: #ff1818;
             font-size: 1.4rem;
@@ -60,15 +61,19 @@
         transition: color 0.3s;
         transition: background 0.3s;
         word-break: keep-all;
+        border: 2px solid red;
         &:hover {
             a {
                 color: #ff0000;
                 transition: color 0.3s;
             }
-            background: #d9d9d9;
+            background: transparent;
             transition: background 0.3s;
         }
         white-space: nowrap;
+        a{
+            color:white;
+        }
     }
     a {
         text-decoration: none;

@@ -26,6 +26,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 .nav .kecsa a {
@@ -96,11 +97,12 @@
   -webkit-transition: background 0.3s;
   transition: background 0.3s;
   word-break: keep-all;
+  border: 2px solid red;
   white-space: nowrap;
 }
 
 .nav .bid:hover {
-  background: #d9d9d9;
+  background: transparent;
   -webkit-transition: background 0.3s;
   transition: background 0.3s;
 }
@@ -109,6 +111,10 @@
   color: #ff0000;
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
+}
+
+.nav .bid a {
+  color: white;
 }
 
 .nav a {

@@ -25,6 +25,9 @@
         @media only screen and (max-width: 1050px) {
             width: calc(80vw + 3.5rem);
         }
+        .date{
+            color:#fff;
+        }
         input,
         textarea {
             width: 80%;
@@ -63,14 +66,14 @@
             }
             &::after {
                 content: "";
-                background: #d9d9d9;
+                background: #111111;
                 position: absolute;
                 z-index: -1;
                 padding: 1rem 1.5rem;
                 display: block;
                 transition: all 0.3s ease;
-                left: -30%;
-                right: -30%;
+                left: -35%;
+                right: -35%;
                 top: 0;
                 bottom: 0;
                 transform: skewX(-45deg) scale(0, 1);

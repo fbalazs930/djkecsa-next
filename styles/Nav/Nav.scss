@@ -8,7 +8,8 @@
     min-height: 10vh;
     box-shadow: hsla(0, 0%, 41%, 0.253) 0 1px 3px;
     font-size: clamp(0.4rem, 10vw, 1.2rem);
-    padding: 0 5rem;
+    padding: 0 10rem;
+    background: #000;
     @media only screen and (max-width: 1280px) {
         padding: 0 3rem;
     }
@@ -32,7 +33,6 @@
         align-items: center;
         gap: 1.4rem;
         font-size: 1.1rem;
-        text-transform: uppercase;
         a::after {
             content: "";
             position: absolute;
@@ -90,6 +90,7 @@
             padding: 0.65rem 1.2rem;
             background: #ff0000;
             border: 2px solid red;
+            font-weight: bold;
             &:hover {
                 color: #ff0000;
                 transition: color 0.3s;

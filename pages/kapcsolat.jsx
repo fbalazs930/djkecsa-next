@@ -28,7 +28,7 @@ export default function Contact() {
                     </a>
                 </Link>
             </div>
-            <p className="bottom">Ezt a tevékenységet hivatalosan hajtom végre, ezáltal számlaképes vagyok és rendelkezem éves MAHASZ engedéllyel!</p>
+            <h3 className="bottom">Ezt a tevékenységet hivatalosan hajtom végre, <br /> ezáltal számlaképes vagyok és rendelkezem éves MAHASZ engedéllyel!</h3>
         </div>
     )
 }

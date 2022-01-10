@@ -40,6 +40,10 @@
   padding: 1rem;
 }
 
+.equipment .items .item:hover {
+  outline: rgba(255, 0, 0, 0.609) solid 2px;
+}
+
 .equipment .items .item .img {
   position: relative;
 }

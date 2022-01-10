@@ -4,8 +4,11 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap:2rem;
+    gap:3rem;
     padding: 0 3rem;
+    @media only screen and(max-width:570px){
+        align-items: flex-start;
+    }
     h2{
         span{
             color:#FF0000;

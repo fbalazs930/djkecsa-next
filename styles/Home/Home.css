@@ -13,8 +13,16 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
   padding: 0 3rem;
+}
+
+@media only screen and (max-width: 570px) {
+  .home {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 
 .home h2 span {

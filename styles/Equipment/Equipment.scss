@@ -102,6 +102,10 @@
                 }
             }
         }
+        @media only screen and (max-width: 1240px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
     }
     @media only screen and (max-width: 1170px) {
         padding: 2rem;

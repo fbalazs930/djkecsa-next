@@ -308,23 +308,26 @@ body {
 .equipment .items .item {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 10vh 1fr;
-      grid-template-rows: 10vh 1fr;
+  -ms-grid-rows: 20% 80%;
+      grid-template-rows: 20% 80%;
   text-align: center;
   margin: 1rem;
   border-radius: 5px;
   -webkit-box-shadow: rgba(84, 89, 95, 0.302) 0px 1px 2px 0px, rgba(84, 90, 95, 0.149) 0px 1px 3px 1px;
           box-shadow: rgba(84, 89, 95, 0.302) 0px 1px 2px 0px, rgba(84, 90, 95, 0.149) 0px 1px 3px 1px;
   padding: 0.75rem;
-  min-height: 30vh;
+  height: 30vh;
   width: clamp(7rem, 15vw, 25rem);
+  position: relative;
 }
 
 .equipment .items .item .img {
-  width: 100%;
-  height: auto;
   position: relative;
-  padding-bottom: 20vh;
+}
+
+.equipment .items .item .img img {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 ::-webkit-calendar-picker-indicator {

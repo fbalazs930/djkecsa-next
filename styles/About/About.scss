@@ -1,5 +1,5 @@
 .about{
-    padding: 1rem 10rem;
+    padding: 1rem clamp(2rem, 15vw, 10rem);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,7 +13,7 @@
         padding:0 0 1rem 0;
     }
     p{
-        font-size: 1.12rem;
+        font-size: 1.1rem;
         line-height: 25px;
     }
     .images{

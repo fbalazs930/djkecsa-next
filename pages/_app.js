@@ -16,23 +16,32 @@ function MyApp({ Component, pageProps }) {
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossOrigin="anonymous" />
       </Head>
+
       <nav className='nav'>
-        <Link href="/" passHref>
+        <Link href="/" passHref onClick={closeMenu}>
           <div className="kecsa">
-            <Image alt="logo" width="130px" height="30px" src="https://i.postimg.cc/W3p6qCkN/logo.png" />
+            <Image alt="logo" width="140px" height="30px" src="https://i.postimg.cc/W3p6qCkN/logo.png" />
           </div>
         </Link>
 
         <div className={click ? 'links active' : 'links'}>
-          <Link onClick={closeMenu} href="/">Kezdőlap</Link>
-          <Link onClick={closeMenu} href="/bemutatkozo">Bemutatkozó</Link>
-          <Link onClick={closeMenu} href="/felszereles">Felszerelés</Link>
-          <Link onClick={closeMenu} href="/kapcsolat">Kapcsolat</Link>
+          <Link href="/" passHref>
+            <a onClick={closeMenu}>Kezdőlap</a>
+          </Link>
+          <Link href="/bemutatkozo" passHref>
+            <a onClick={closeMenu}>Bemutatkozó</a>
+          </Link>
+          <Link href="/felszereles" passHref>
+            <a onClick={closeMenu}>Felszerelés</a>
+          </Link>
+          <Link href="/kapcsolat" passHref>
+            <a onClick={closeMenu}>Kapcsolat</a>
+          </Link>
         </div>
 
         <div className="menu-icon" onClick={handleClick}>
           <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
-        </div>
+        </div>        
 
         <div className="bid">
           <Link href="/arajanlat">Árajánlat kérés</Link>

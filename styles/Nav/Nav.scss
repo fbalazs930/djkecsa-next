@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
 .nav {
+    z-index: 6;
     position: sticky;
     display: flex;
     align-items: center;
@@ -21,6 +22,9 @@
             font-size: 1.4rem;
             font-family: "Alfa Slab One", cursive;
         }
+        @media only screen and (max-width: 940px) {
+            display: none;
+        }
     }
     .links {
         display: flex;
@@ -39,9 +43,7 @@
             border-bottom: 1px solid;
             margin-top: 10px;
             opacity: 0;
-            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
             transition: opacity 0.35s, transform 0.35s;
-            -webkit-transform: scale(0, 1);
             transform: scale(0, 1);
         }
         a {
@@ -49,9 +51,9 @@
         }
         a:hover::after {
             opacity: 1;
-            -webkit-transform: scale(1);
             transform: scale(1);
         }
+
         @media only screen and (max-width: 940px) {
             opacity: 0;
             height: 70vh;
@@ -60,10 +62,10 @@
             position: fixed;
             flex-direction: column;
             justify-content: center;
-            gap: 0;
+            gap: 2rem;
             padding: 100px 0;
             left: -1000px;
-            background-color: var(--dark);
+            background-color: #161616e5;
             transition: all 0.2s ease-in-out;
             a {
                 display: flex;
@@ -75,48 +77,65 @@
             }
         }
     }
+    .bid {
+        text-align: center;
+        transition: color 0.3s;
+        transition: background 0.3s;
+        word-break: keep-all;
+        font-size: clamp(0.75rem, 3vw, 1rem);
+        white-space: nowrap;
+        a {
+            border-radius: 6rem;
+            color: white;
+            padding: 0.65rem 1.2rem;
+            background: #ff0000;
+            border: 2px solid red;
+            &:hover {
+                color: #ff0000;
+                transition: color 0.3s;
+                background: transparent;
+                transition: background 0.3s;
+            }
+        }
+    }
     .menu-icon {
         cursor: pointer;
         z-index: 5;
         display: none;
-        font-size: 30px;
-        grid-area: menu-icon;
-        color:white;
+        font-size: clamp(1.5rem, 7vw, 2rem);
+        color: white;
+        position: fixed;
+        top:0;
+        right: 0;
+        filter: brightness(200%);
+        padding: .75rem .75rem 1.75rem 1.75rem;
+        background: red;
+        border-radius: 0 0 0 100%;
         @media only screen and (max-width: 940px) {
             display: flex;
             justify-content: flex-end;
             align-items: center;
         }
+        /* &::after {
+            z-index: 1;
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: red;
+            border: 2px solid red;
+            padding: 3rem;
+            transform: translate(50%, -50%);
+            border-radius: 0 0 0 50%;
+            &:hover{
+                padding:20rem;
+            }
+        } */
     }
     .active {
         opacity: 1;
         left: 0;
         transition: left 0.2s ease-in-out;
-    }
-    .bid {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 5rem;
-        background: #ff0000;
-        text-align: center;
-        padding: 0.4rem 1.1rem;
-        transition: color 0.3s;
-        transition: background 0.3s;
-        word-break: keep-all;
-        border: 2px solid red;
-        &:hover {
-            a {
-                color: #ff0000;
-                transition: color 0.3s;
-            }
-            background: transparent;
-            transition: background 0.3s;
-        }
-        white-space: nowrap;
-        a {
-            color: white;
-        }
     }
     a {
         text-decoration: none;

@@ -6,13 +6,13 @@ export default function Equipment() {
             <h1>Felszerelés</h1>
             <div className="items">
                 <div className="item">
-                    <div>2db Turbosound Milan M12 aktív hangfal</div>
+                    <div>Turbosound Milan M12 aktív hangfal</div>
                     <div className="img">
                         <Image alt="Turbosound Milan M12" layout="fill" src="https://i.postimg.cc/GhPd1WS2/image.png" />
                     </div>
                 </div>
                 <div className="item">
-                    <div>2db JBL PRX PRX618S-XLF aktív mélyláda</div>
+                    <div>JBL PRX PRX618S-XLF aktív mélyláda</div>
                     <div className="img">
                         <Image alt="JBL PRX PRX618S-XLF" layout="fill" src="https://i.postimg.cc/tCBvPDsk/PRX618-S-XLF-removebg-preview.png" />
                     </div>
@@ -36,19 +36,19 @@ export default function Equipment() {
                     </div>
                 </div>
                 <div className="item">
-                    <div>2db teremszinező PAR lámpa</div>
+                    <div>Teremszinező PAR lámpa</div>
                     <div className="img">
                         <Image alt="PAR lampa" layout="fill" src="https://i.postimg.cc/mD0zKvpj/image-removebg-preview-2.png" />
                     </div>
                 </div>
                 <div className="item">
-                    <div>2db Cameo Hydrabeam 1000 RGBW</div>
+                    <div>Cameo Hydrabeam 1000 RGBW</div>
                     <div className="img">
                         <Image alt="Cameo Hydrabeam 1000 RGBW" layout="fill" src="https://i.postimg.cc/63GTVH6v/image-removebg-preview-3.png" />
                     </div>
                 </div>
                 <div className="item">
-                    <div>2db EUROLITE - LED TMH-13 Moving-Head Spot</div>
+                    <div>EUROLITE - LED TMH-13 Moving-Head Spot</div>
                     <div className="img">
                         <Image alt="EUROLITE - LED TMH-13 Moving-Head Spot" layout="fill" src="https://i.postimg.cc/d0h0vWyx/image-removebg-preview-4.png" />
                     </div>

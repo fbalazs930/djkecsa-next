@@ -5,9 +5,6 @@ import Image from "next/image"
 import { useState } from 'react';
 import logo from '../public/images/logo.png'
 
-const myLoader = ({ src, width, quality }) => {
-  return `https://example.com/${src}?w=${width}&q=${quality || 75}`
-}
 
 function MyApp({ Component, pageProps }) {
   const [click, setClick] = useState(false);
@@ -25,7 +22,7 @@ function MyApp({ Component, pageProps }) {
       <nav className='nav'>
         <Link href="/" passHref onClick={closeMenu}>
           <div className="kecsa">
-            <Image loader={myLoader} alt="logo" width="140px" height="30px" src={logo} />
+            <Image alt="logo" width="140px" height="30px" src={logo} />
           </div>
         </Link>
 

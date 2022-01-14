@@ -9,5 +9,5 @@ module.exports = {
       '/kapcsolat': { page: '/kapcsolat', query: { title: 'DJ Kecsa' } },
     }
   },
-  reactStrictMode: true,
+  reactStrictMode: false,
 }

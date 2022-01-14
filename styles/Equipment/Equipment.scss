@@ -1,5 +1,8 @@
 .equipment {
-    padding: 2rem clamp(2rem, 15vw, 10rem);
+    padding: 3rem clamp(2rem, 15vw, 10rem);
+    h1{
+        margin: 0 0 1rem 0;
+    }
     h1,
     h2 {
         text-align: center;
@@ -23,7 +26,7 @@
             position: relative;
             grid-gap: 0.75rem;
             padding: 1rem;
-            &:hover{
+            &:hover {
                 outline: rgba(255, 0, 0, 0.609) solid 2px;
             }
             .img {
@@ -33,81 +36,113 @@
                     object-fit: contain;
                 }
             }
-            &::after{
-                color: #828282;;
+            &::after {
+                color: #828282;
                 position: absolute;
-                bottom:0;
-                left:0;
+                bottom: 0;
+                left: 0;
                 font-size: 1.5rem;
-                padding:0 0 .1rem .5rem;
+                padding: 0 0 0.1rem 0.5rem;
             }
-            &:nth-child(1){
-                &::after{
+            &:nth-child(1) {
+                &::after {
                     content: "2x";
                 }
             }
-            &:nth-child(2){
-                &::after{
+            &:nth-child(2) {
+                &::after {
                     content: "2x";
                 }
             }
-            &:nth-child(3){
-                &::after{
+            &:nth-child(3) {
+                &::after {
                     content: "1x";
                 }
             }
-            &:nth-child(4){
-                &::after{
+            &:nth-child(4) {
+                &::after {
                     content: "1x";
                 }
             }
-            &:nth-child(5){
-                &::after{
+            &:nth-child(5) {
+                &::after {
                     content: "1x";
                 }
             }
-            &:nth-child(6){
-                &::after{
+            &:nth-child(6) {
+                &::after {
                     content: "2x";
                 }
             }
-            &:nth-child(7){
-                &::after{
+            &:nth-child(7) {
+                &::after {
                     content: "2x";
                 }
             }
-            &:nth-child(8){
-                &::after{
+            &:nth-child(8) {
+                &::after {
                     content: "2x";
                 }
             }
-            &:nth-child(9){
-                &::after{
+            &:nth-child(9) {
+                &::after {
                     content: "1x";
                 }
             }
-            &:nth-child(10){
-                &::after{
+            &:nth-child(10) {
+                &::after {
                     content: "1x";
                 }
             }
-            &:nth-child(11){
-                &::after{
+            &:nth-child(11) {
+                &::after {
                     content: "1x";
                 }
             }
-            &:nth-child(12){
-                &::after{
+            &:nth-child(12) {
+                &::after {
                     content: "1x";
                 }
             }
-        }
-        @media only screen and (max-width: 1240px) {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
         }
     }
     @media only screen and (max-width: 1170px) {
         padding: 2rem;
+        .items {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            padding:0;
+            .item{
+                width: 80%;
+            }
+        }
+    }
+    @media only screen and (max-width: 873px) {
+        padding: 3rem;
+        .items {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding:0;
+            .item{
+                height: 35vh;
+            }
+        }
+    }
+    @media only screen and (max-width: 680px) {
+        padding: 1rem;
+        .items {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    @media only screen and (max-width: 480px) {
+        .items {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            .item{
+                height: 30vh;
+                grid-gap: .15rem;
+            }
+        }
     }
 }

@@ -1,5 +1,9 @@
 .equipment {
-  padding: 2rem clamp(2rem, 15vw, 10rem);
+  padding: 3rem clamp(2rem, 15vw, 10rem);
+}
+
+.equipment h1 {
+  margin: 0 0 1rem 0;
 }
 
 .equipment h1,
@@ -60,7 +64,7 @@
   bottom: 0;
   left: 0;
   font-size: 1.5rem;
-  padding: 0 0 .1rem .5rem;
+  padding: 0 0 0.1rem 0.5rem;
 }
 
 .equipment .items .item:nth-child(1)::after {
@@ -111,18 +115,60 @@
   content: "1x";
 }
 
-@media only screen and (max-width: 1240px) {
+@media only screen and (max-width: 1170px) {
+  .equipment {
+    padding: 2rem;
+  }
+  .equipment .items {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0;
+  }
+  .equipment .items .item {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 873px) {
+  .equipment {
+    padding: 3rem;
+  }
   .equipment .items {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
+    padding: 0;
+  }
+  .equipment .items .item {
+    height: 35vh;
   }
 }
 
-@media only screen and (max-width: 1170px) {
+@media only screen and (max-width: 680px) {
   .equipment {
-    padding: 2rem;
+    padding: 1rem;
+  }
+  .equipment .items {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .equipment .items {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .equipment .items .item {
+    height: 30vh;
+    grid-gap: .15rem;
   }
 }
 /*# sourceMappingURL=Equipment.css.map */

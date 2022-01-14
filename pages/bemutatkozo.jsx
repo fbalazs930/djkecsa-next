@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function About() {
     return (
@@ -27,6 +28,38 @@ export default function About() {
             <h3>
                 A zenei repertoárom elég széles én úgy gondolom. Kb. 8000 zene, amikben található: Retró slágerek, Mulatós, mai fiatalságnak megfelelő stílusok tömérdektelen mennyiségben!
             </h3>
+
+            <h2 className='h2'>Ahol eddig megfordultam:</h2>
+
+            <div className="grid_2">
+                <ul className="public">
+                    <p>Nyilvános rendezvények:</p>
+                    <li> ● 2017 - 2019 Holdfényes Biliárd Club / Kiskőrös</li>
+                    <li> ● 2017 - napjainkig Extrém Söröző / Kiskőrös</li>
+                    <li> ● 2017 - Madeira Café / Kiskőrös</li>
+                    <li> ● 2018 - Textán / Tabdi</li>
+                    <li> ● 2018 - napjainkig Főnix Club / Akasztó</li>
+                    <li> ● 2020 nyár Oázis Sörkert / Soltvadkert Vadkerti tó</li>
+                    <li> ● 2020 - napjainkig Drift Club / Kiskőrös</li>
+                </ul>
+                <div className="line">
+                    <div></div>
+                </div>
+                <ul className="private">
+                    <p>Zártkörű rendezvények:</p>
+                    <li> ● megannyi születésnap</li>
+                    <li> ● Bankettek</li>
+                    <li> ● Lakodalmak</li>
+                    <li> ● Leánybúcsúk</li>
+                    <li> ● Családi rendezvények</li>
+                    <li> ● Céges évzárók</li>
+                </ul>
+            </div>
+
+            <h3 className='kepek'>Képek az instagram oldalamon megtekinthetőek:</h3>
+            <Link href="https://www.instagram.com/dj_kecsa/" passHref>
+                <a target="_blank"><i className="fab fa-instagram"></i></a>
+            </Link>
         </div>
     )
 }

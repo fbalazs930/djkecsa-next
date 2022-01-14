@@ -1,5 +1,11 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import pult1 from '../public/images/pult1.jpeg'
+import pult2 from '../public/images/pult2.jpg'
+
+const myLoader = ({ src, width, quality }) => {
+    return `https://example.com/${src}?w=${width}&q=${quality || 75}`
+}
 
 export default function About() {
     return (
@@ -11,7 +17,7 @@ export default function About() {
                     Az én zenei szeretetem általános iskolába nyúlik vissza 6. osztályba, ahol felkértek, hogy zenéljek a felsős évfolyamnak ekkor ez egy nagy falat volt nekem, de a végén sikeresen teljesítettem. Ezentúl én voltam a zenei felelős az iskolában a studió munkálatokat is én végeztem(iskolai hangosítás, ballagások, különböző ünnepségek).
                 </p>
                 <div className="img img1">
-                    <Image alt="pult" layout="fill" src="https://i.postimg.cc/HLv01jfH/IMG-2694.jpg" />
+                    <Image loader={myLoader} alt="pult" layout="fill" src={pult1} />
                 </div>
                 <p className="p2">
                     Az igazi fellendülés 2016 decemberében kezdődött egy családi rendezvényen ahol Kiskőrös legprofibb DJ-je szórakoztatott minket és megkért, hogy hozzam el a saját pultomat és megengedte, hogy az éjszaka folyamán zenélhessek én is ő Németh Pál, aki a késöbbiekben a szárnya alá vett és elindultunk (ahogy Ő mondaná Pali és Padaván) közösen az éjszakába figyelmesen megtanultam, hogy mit és hogyan kell.
@@ -21,7 +27,7 @@ export default function About() {
                     Ezután egyik barátommal (Lengyel Dominik) Kiskőrösön a Holdfényes Biliárd Clubban elkezdtünk bulikat szervezni egész jól indult ahol elértük a 250+ főt ami számunkra egy hatalmas megtisztelés volt ez kicsit több mint 2 évig működött, mindeközben jártam a környékbeli születésnapokat, kisebb nagyobb nyilvános rendezvényeket, céges évzárók, lakodalmak, ekkoriban kezdtem el az Extrém Sörözőben is elkezdeni zenélni, ami még a mai napig tart és töretlenül működik (amit köszönök minden oda járó bulizni vágyónak).
                 </p>
                 <div className="img img2">
-                    <Image alt="pult" layout="fill" src="https://i.postimg.cc/3N8DyhM9/IMG-3201.jpg" />
+                    <Image loader={myLoader} alt="pult" layout="fill" src={pult2} />
                 </div>
             </div>
 

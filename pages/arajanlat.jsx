@@ -1,6 +1,6 @@
 import emailjs from 'emailjs-com';
 
-export default function Bidding() {
+export default function Arajanlat() {
     function sendEmail(e) {
         e.preventDefault();
         emailjs.sendForm('service_33gx7rg', 'kecsaForm', e.target, 'user_J1ob3Ryk5QebuFnmmgVdQ')
@@ -33,3 +33,4 @@ export default function Bidding() {
         </div>
     )
 }
+

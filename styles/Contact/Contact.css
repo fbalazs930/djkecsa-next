@@ -62,7 +62,7 @@
 }
 
 .contact .icons .icon p {
-  font-size: clamp(1rem, 3vw, 1.55rem);
+  font-size: clamp(1rem, 3vw, 1.2rem);
 }
 
 .contact .icons .icon:hover i {

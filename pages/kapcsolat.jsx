@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-export default function Contact() {
+export default function Kapcsolat() {
     return (
         <div className="contact">
             <h1>Kecskeméti Márk</h1>
@@ -32,3 +32,4 @@ export default function Contact() {
         </div>
     )
 }
+

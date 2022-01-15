@@ -1,4 +1,4 @@
-module.exports = {
+module.exports = {/* 
   exportPathMap: async function (
   ) {
     return {
@@ -8,6 +8,6 @@ module.exports = {
       '/felszereles': { page: '/felszereles', query: { title: 'DJ Kecsa' } },
       '/kapcsolat': { page: '/kapcsolat', query: { title: 'DJ Kecsa' } },
     }
-  },
+  }, */
   reactStrictMode: false,
 }

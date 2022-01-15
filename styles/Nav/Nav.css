@@ -51,6 +51,11 @@
   font-family: "Alfa Slab One", cursive;
 }
 
+.nav .kecsa .logo {
+  width: 130px;
+  height: 30px;
+}
+
 @media only screen and (max-width: 940px) {
   .nav .kecsa {
     display: none;

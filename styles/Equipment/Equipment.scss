@@ -1,6 +1,6 @@
 .equipment {
     padding: 3rem clamp(2rem, 15vw, 10rem);
-    h1{
+    h1 {
         margin: 0 0 1rem 0;
     }
     h1,
@@ -21,7 +21,7 @@
             border-radius: 5px;
             box-shadow: hsla(240, 1%, 82%, 0.302) 0px 1px 2px 0px, hsla(240, 1%, 82%, 0.302) 0px 1px 3px 1px;
             padding: 1rem 1rem 2rem 1rem;
-            height: 40vh;
+            height: 45vh;
             width: 15vw;
             position: relative;
             grid-gap: 0.75rem;
@@ -34,6 +34,8 @@
                 img {
                     position: relative;
                     object-fit: contain;
+                    width: 90%;
+                    height: 90%;
                 }
             }
             &::after {
@@ -111,8 +113,8 @@
         .items {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
-            padding:0;
-            .item{
+            padding: 0;
+            .item {
                 width: 80%;
             }
         }
@@ -122,9 +124,9 @@
         .items {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            padding:0;
-            .item{
-                height: 35vh;
+            padding: 0;
+            .item {
+                height: 32vh;
             }
         }
     }
@@ -139,9 +141,9 @@
         .items {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            .item{
-                height: 30vh;
-                grid-gap: .15rem;
+            .item {
+                height:40vh;
+                grid-gap: 0.15rem;
             }
         }
     }

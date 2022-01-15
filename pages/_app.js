@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }) {
       <nav className='nav'>
         <Link href="/" passHref onClick={closeMenu}>
           <div className="kecsa">
-            <img className='logo' alt="logo" src="https://i.postimg.cc/W3p6qCkN/logo.png"  />
+            <img className='logo' alt="logo" src="https://i.postimg.cc/W3p6qCkN/logo.png" />
           </div>
         </Link>
 
@@ -41,12 +41,13 @@ function MyApp({ Component, pageProps }) {
 
         <div className="menu-icon" onClick={handleClick}>
           <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
-        </div>        
+        </div>
 
         <div className="bid">
           <Link href="/arajanlat">Árajánlat kérés</Link>
         </div>
       </nav>
+      
       <Component {...pageProps} />
     </div>
   )

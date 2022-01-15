@@ -1,6 +1,9 @@
 import Link from "next/link"
+import { useState } from "react";
 
 export default function Kapcsolat() {
+
+    const [click2, setClick2] = useState(false);
     return (
         <div className="contact">
             <h1>Kecskeméti Márk</h1>
@@ -28,7 +31,10 @@ export default function Kapcsolat() {
                     </a>
                 </Link>
             </div>
-            <h3 className="bottom">Ezt a tevékenységet hivatalosan hajtom végre, <br /> ezáltal számlaképes vagyok és rendelkezem éves MAHASZ engedéllyel!</h3>
+            <h3 className="bottom">Ezt a tevékenységet hivatalosan hajtom végre, <br /> ezáltal számlaképes vagyok és rendelkezem éves <span onDoubleClick={() => { setClick2(!click2) }}>MAHASZ</span> engedéllyel!</h3>
+            {click2 && <Link href="https://www.hitwebcounter.com" passHref>
+                <a target="_blank"><img src="https://www.webfreecounter.com/hit.php?id=gvpncoq&nd=5&style=1" border="0" alt="web counter" /></a>
+            </Link>}
         </div>
     )
 }

@@ -16,7 +16,7 @@ export default function Felszereles() {
                     </div>
                 </div>
                 <div className="item">
-                    <div>DBX driverack pa2 rendeszvezérlő processzor</div>
+                    <div>DBX driverack pa2 rendszervezérlő processzor</div>
                     <div className="img">
                         <img alt="DBX driverack pa2" src="https://i.postimg.cc/Bndgcz4T/image-removebg.png" />
                     </div>

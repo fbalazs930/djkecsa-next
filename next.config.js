@@ -1,13 +1,14 @@
-module.exports = {/* 
-  exportPathMap: async function (
+module.exports = {
+  trailingSlash: true,
+   exportPathMap: async function (
   ) {
     return {
       '/': { page: '/' },
-      '/arajanlat': { page: '/arajanlat', query: { title: 'DJ Kecsa' } },
-      '/bemutatkozo': { page: '/bemutatkozo', query: { title: 'DJ Kecsa' } },
-      '/felszereles': { page: '/felszereles', query: { title: 'DJ Kecsa' } },
-      '/kapcsolat': { page: '/kapcsolat', query: { title: 'DJ Kecsa' } },
+      '/arajanlat': { page: '/arajanlat' },
+      '/bemutatkozo': { page: '/bemutatkozo' },
+      '/felszereles': { page: '/felszereles' },
+      '/kapcsolat': { page: '/kapcsolat' },
     }
-  }, */
-  reactStrictMode: false,
+  },
+  reactStrictMode: true,
 }
